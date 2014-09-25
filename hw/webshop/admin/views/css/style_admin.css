@@ -1,0 +1,89 @@
+/*** Admin panel ***/
+DIV.base {
+    width: 800px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+DIV.middle {
+    margin-top: 10px;
+}
+
+DIV.clearfix {
+    clear: both;
+}
+
+/*** Content ***/
+
+DIV.admin_table {
+    float: left;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+
+DIV.admin_column_1  {
+    width: 50px;
+    float: left;
+    text-align: center;
+}
+DIV.admin_column_2  {
+    width: 450px;
+    float: left;
+}
+DIV.admin_column_3  {
+    width: 150px;
+    float: left;
+}
+DIV.admin_column_4  {
+    width: 150px;
+    float: left;
+}
+
+DIV.column_name {
+    width: 250px;
+    float: left;
+}
+DIV.column_text  {
+    width: 300px;
+    float: left;
+}
+DIV.column_options  {
+    width: 160px;
+    float: left;
+}
+
+DIV.admin_row_1 {
+    background-color: #f4f4f4;
+    float: left;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+FORM.admin_options {
+    margin: -5px 0px;
+}
+INPUT.option_button {
+    height: 23px;
+}
+
+INPUT.admin_title {
+    width: 700px;
+}
+
+TEXTAREA.admin_text {
+    width: 700px;
+    height: 150px;
+    resize: vertical;
+}
+
+.error {
+    color: #D2691E;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+DIV.confirm_deleting {
+    margin-top: 25px;
+    text-align: center;
+}

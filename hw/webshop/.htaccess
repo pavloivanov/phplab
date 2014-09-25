@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteBase /hw/webshop/
+RewriteRule .htaccess - [F]
+
+
+RewriteRule ^admin/product/add/?$ admin/index.php?controller=products&action=showForm
+RewriteRule ^admin/?$ admin/index.php
+
+RewriteRule ^category/\w+_(\d+)/?$ index.php?action=show&id=$1 [L,QSA]
+RewriteRule ^product/\w+_(\d+)/?$ index.php?action=showProduct&id=$1 [L,QSA]
+
+RewriteRule ^(\w+)/?$ index.php
