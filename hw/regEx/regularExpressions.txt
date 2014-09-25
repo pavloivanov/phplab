@@ -1,0 +1,22 @@
+1. Write a Regular Expression that will match a date that follows the following standard “YYYY-MM-DD”:
+
+^\d{4}-(0[1-9]|1[0-2])-([0][1-9]|[12][0-9]|3[01])$	 - Any year
+^([01]\d{3}|20[01][0-4])-(0[1-9]|1[0-2])-([0][1-9]|[12][0-9]|3[01])$	- Year until 2014
+
+
+
+2. Write a Regular Expression that will match a traditional SSN:
+
+^\d{3}-\d{2}-\d{4}$
+
+
+
+3. Write a Regular Expression that will match an IPv4 address:
+
+^((0|\d{2}|1\d{2}|2\d[0-5])\.){3}(0|\d{2}|1\d{2}|2\d[0-5])$
+
+
+
+4. Write a Regular Expression that will match an email address:
+
+^\w{3,16}@[a-z]{1,8}(\.[a-z]{2,5}){1,3}$
